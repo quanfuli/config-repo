@@ -3,8 +3,10 @@ spring.profiles.active: development
 spring:
   profiles: cloud
   neo4j:
-    host: ${SPRING_NEO4J_HOST:localhost}
+    host: ${SPRING_NEO4J_HOST:127.0.0.1}
     port: ${SPRING_NEO4J_PORT:7474}
+    username: neo4j
+    password: 123456
 ---
 spring:
   profiles: development
